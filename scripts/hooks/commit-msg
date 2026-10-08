@@ -1,0 +1,6 @@
+#!/bin/sh
+# Enforce semantic commit: chore|feature|bugfix|fix: message
+if ! head -n1 "$1" | grep -Eq '^(chore|feature|bugfix|fix): .+'; then
+  echo "Commit message harus diawali: chore|feature|bugfix|fix: <pesan>" >&2
+  exit 1
+fi
