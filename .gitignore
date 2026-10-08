@@ -10,3 +10,4 @@ wheels/
 .venv
 scaffold.txt
 .env
+tasklist.txt
