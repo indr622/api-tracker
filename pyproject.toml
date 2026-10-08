@@ -1,0 +1,21 @@
+[project]
+name = "api-tracker"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "indr622", email = "indrbasuki1@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "celery>=5.6.3",
+    "fastapi[standar]>=0.142.4",
+    "sqlalchemy>=2.1.4",
+]
+
+[project.scripts]
+api-tracker = "api_tracker:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
